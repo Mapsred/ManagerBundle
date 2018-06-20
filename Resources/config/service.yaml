@@ -1,0 +1,5 @@
+services:
+    Maps_red\ManagerBundle\Maker\MakeManager:
+        arguments: ["@maker.file_manager"]
+        tags:
+            - { name: maker.command }

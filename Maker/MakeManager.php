@@ -78,7 +78,7 @@ class MakeManager extends AbstractMaker
 
         $this->writeSuccessMessage($io);
 
-        $io->text('GO TO WORK !');
+        $io->text('GOOD TO GO !');
     }
 
     /**
