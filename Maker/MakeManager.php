@@ -35,13 +35,13 @@ class MakeManager extends AbstractMaker
 
     public static function getCommandName(): string
     {
-        return 'make:controller';
+        return 'make:manager';
     }
 
     public function configureCommand(Command $command, InputConfiguration $inputConf)
     {
         $command
-            ->setDescription('Creates a new controller class')
+            ->setDescription('Creates a new manager class')
             ->addArgument('entity-class', InputArgument::OPTIONAL, "What entity do you want to use")
             ->setHelp("TODO");
     }
