@@ -69,8 +69,9 @@ class MakeManager extends AbstractMaker
             $managerClassNameDetails->getFullName(),
             __DIR__ . "/../Resources/skeleton/Manager.tpl.php",
             [
-                'entity_full_class_name' => $entityClass,
-                'entity_class_name' => $className = substr($entityClass, strrpos($entityClass, '\\') + 1)
+                'entity_full_class_name' => 'App\\Entity\\'.$entityClass,
+                'entity_class_name' => $entityClass,
+                'entity_full_repository_name' => 'App\\Repository\\'.$entityClass,
             ]
         );
 

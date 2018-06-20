@@ -4,7 +4,7 @@ namespace <?= $namespace; ?>;
 
 use <?= $entity_full_class_name; ?>;
 use Maps_red\ManagerBundle\Manager\AbstractManager;
-use <?= $entity_full_class_name; ?>Repository;
+use <?= $entity_full_repository_name; ?>Repository;
 use Doctrine\ORM\EntityManagerInterface;
 
 /**
